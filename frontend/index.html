@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffe-Shop Data</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Loading JS Libraries -->
+    <script src="./js/lib/plotly-2.18.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <h1>Coffe-Shop Data</h1>
 
-    <button type="button" name="button-map-1">Map 1</button>
-    <button type="button" name="button-map-2">Map 2</button>
-    <button type="button" name="button-map-3">Map 3</button>
+    <button type="button" onClick="loadMap('plotly')" name="button-map-1">Plotly</button>
+    <button type="button" onClick="loadMap('dummy')" name="button-map-2">Dummy</button>
+    <!-- <button type="button" name="button-map-3">Map 3</button> -->
+
+    <div id="figure"></div>
 </body>
+<script src="./js/script.js"></script>
 </html>

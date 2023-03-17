@@ -1,0 +1,160 @@
+* {
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: #26589F;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body > * {
+    margin: 0 0.5rem;
+}
+
+/* COLORS */
+
+.bright {
+    color: #f0ead2;
+}
+.bg-bright {
+    background-color: #f0ead2;
+}
+
+.medium-bright {
+    color: #dde5b6;
+}
+.bg-medium-bright {
+    background-color: #dde5b6;
+}
+
+.medium {
+    color: #adc178;
+}
+.bg-medium {
+    background-color: #adc178;
+}
+
+.medium-dark {
+    color: #a98467;
+}
+.bg-medium-dark {
+    background-color: #a98467;
+}
+
+.dark {
+    color: #6c584c;
+}
+.bg-dark {
+    background-color: #6c584c;
+}
+
+.bg-gradient {
+    background: linear-gradient(#adc178,#dde5b6);
+}
+
+
+/* TYPESET */
+
+@font-face {
+    font-family: Dosis;
+    src: local("Dosis"), url("./fonts/Dosis/Dosis-VariableFont_wght.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: local("Josefin Sans"), url("./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("TrueType");
+}
+
+.dosis {
+    font-family: Dosis, sans-serif;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+
+p,h1 {
+    line-height: 150%;
+}
+
+h1 {
+    padding: 0.5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    padding-left: 15%;
+}
+
+.text-shadow{
+    text-shadow: 3px 3px #6c584c;
+}
+
+/* INTERFACE */
+
+button {
+    flex-grow: 1;
+    font-size: 1.5em;
+    padding: 0.25em;
+    margin: 0.25em 0;
+    text-align: center;
+    line-height: 130%;
+}
+button.map-button {
+    color: #f0ead2;
+    background-color: #6c584c;
+}
+button.map-button:hover {
+}
+button.map-button:focus {
+    background-color: #a98467;
+}
+
+
+/* SECTIONS */
+
+#figure {
+
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.box-shadow {
+    box-shadow: 10px 5px #6c584c;
+}

@@ -4,4 +4,4 @@ function loadMap(name) {
     FIGURE.load(`../maps/${name}.html`);
 }
 
-loadMap('plotly');
+loadMap('25sqm2emp');

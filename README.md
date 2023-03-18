@@ -16,6 +16,7 @@ This project displays data about coffee-prices in Düsseldorf on a small website
 ### Executing program
 
 * DATASCIENCE MAGIC
+* make sure the dependencies in index.HTML are properly linked
 * open index.HTML
 ```
 code blocks for commands

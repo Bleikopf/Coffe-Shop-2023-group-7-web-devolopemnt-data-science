@@ -166,8 +166,13 @@ button.map-button:focus {
     border: 5px solid #a98467;
     box-sizing: border-box;
     border-radius: 5px;
+    overflow: hidden;
 }
-
+/*#figure>div {
+    position: relative;
+    z-index: -1;
+}
+*/
 #buttons {
     display: flex;
     flex-direction: row;

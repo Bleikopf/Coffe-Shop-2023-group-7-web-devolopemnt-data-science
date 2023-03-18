@@ -3,9 +3,9 @@
     background: none repeat scroll 0 0 transparent;
     border: medium none;
     border-spacing: 0;
-    color: #26589F;
-    font-family: 'PT Sans Narrow',sans-serif;
-    font-size: 32px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
     font-weight: normal;
     line-height: 1.42rem;
     list-style: none outside none;
@@ -22,11 +22,12 @@ body, html {
 }
 
 html {
-    height: 100vh;
+    font-size: 32px;
+    font-family: 'PT Sans Narrow',sans-serif;
 }
 
 body > * {
-    margin: 0 0.5rem;
+    margin: 0.33rem 0.67rem;
 }
 
 /* COLORS */
@@ -67,7 +68,7 @@ body > * {
 }
 
 .bg-gradient {
-    background: linear-gradient(#adc178,#dde5b6);
+    background: linear-gradient(#adc178,#dde5b6) repeat-x;
 }
 
 
@@ -104,20 +105,27 @@ body > * {
 .fs-24 {
     font-size: 24px;
 }
+.fs-20 {
+    font-size: 20px;
+}
 
-p,h1 {
+p,h1,a {
     line-height: 150%;
 }
 
 h1 {
     padding: 0.5em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    margin: 0.67em 0.5rem;
     padding-left: 15%;
 }
 
+::selection {
+    color: #a98467;
+    background-color: #dde5b6;
+}
+
 .text-shadow{
-    text-shadow: 3px 3px #6c584c;
+    text-shadow: 3px 3px 1px #6c584c;
 }
 
 /* INTERFACE */
@@ -133,18 +141,31 @@ button {
 button.map-button {
     color: #f0ead2;
     background-color: #6c584c;
+    border: 2px solid #6c584c;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 2px 4px 6px black;
+    transition: 200ms;
 }
 button.map-button:hover {
+    color: #a98467;
+    box-shadow: 3px 6px 9px black;
+    transform: scale(1.01);
 }
 button.map-button:focus {
-    background-color: #a98467;
+    color: #f0ead2;
+    animation: button-gradient 200ms ease-in-out 0ms 1 normal forwards;
+    box-shadow: none;
+    transform: scale(0.99);
 }
 
 
 /* SECTIONS */
 
 #figure {
-
+    border: 5px solid #a98467;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 #buttons {
@@ -156,5 +177,57 @@ button.map-button:focus {
 }
 
 .box-shadow {
-    box-shadow: 10px 5px #6c584c;
+    box-shadow: 7px 5px 2px #6c584c;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    width: auto;
+    margin-bottom: 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* ANIMATIONS */
+
+@keyframes button-gradient {
+    0% {
+        background: radial-gradient(circle at center, #a98467 0%, #6c584c 0%, #6c584c 100%);
+    }
+    10% {
+        background: radial-gradient(circle at center, #a98467 10%, #6c584c 10%, #6c584c 100%);
+    }
+    20% {
+        background: radial-gradient(circle at center, #a98467 20%, #6c584c 20%, #6c584c 100%);
+    }
+    30% {
+        background: radial-gradient(circle at center, #a98467 30%, #6c584c 30%, #6c584c 100%);
+    }
+    40% {
+        background: radial-gradient(circle at center, #a98467 40%, #6c584c 40%, #6c584c 100%);
+    }
+    50% {
+        background: radial-gradient(circle at center, #a98467 50%, #6c584c 50%, #6c584c 100%);
+    }
+    60% {
+        background: radial-gradient(circle at center, #a98467 60%, #6c584c 60%, #6c584c 100%);
+    }
+    70% {
+        background: radial-gradient(circle at center, #a98467 70%, #6c584c 70%, #6c584c 100%);
+    }
+    80% {
+        background: radial-gradient(circle at center, #a98467 80%, #6c584c 80%, #6c584c 100%);
+    }
+    90% {
+        background: radial-gradient(circle at center, #a98467 90%, #6c584c 90%, #6c584c 100%);
+    }
+    100% {
+        background: radial-gradient(circle at center, #a98467 100%, #6c584c 100%, #6c584c 100%);
+    }
+  }

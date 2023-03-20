@@ -22,25 +22,25 @@ def plot_map():
 
     fig.update_coloraxes(cmax=800000, cmin=-200000)  
 
-    fig.show()  
+    return fig  
 
 
 gdf['profit'] = gdf['Profit 25m^2 & 2 employees']
 gdf['minimum coffee price'] = gdf['Mindestverkaufspreis 25m^2 & 2 employees']
-plot_map()
+fig = plot_map()
 pio.write_html(fig, file='././maps/25sqm2emp.html', include_plotlyjs=False, full_html=False, div_id='plotly_map' )
 
 gdf['profit'] = gdf['Profit 25m^2 & 4 employees']
-gdf['minimum coffee price'] = gdf['Mindestverkaufspreis 25m^2 & 2 employees']
-plot_map()
+gdf['minimum coffee price'] = gdf['Mindestverkaufspreis 25m^2 & 4 employees']
+fig = plot_map()
 pio.write_html(fig, file='././maps/25sqm4emp.html', include_plotlyjs=False, full_html=False, div_id='plotly_map' )
 
 gdf['profit'] = gdf['Profit 300m^2 & 2 employees']
-gdf['minimum coffee price'] = gdf['Mindestverkaufspreis 300m^2 & 4 employees']
-plot_map()
+gdf['minimum coffee price'] = gdf['Mindestverkaufspreis 300m^2 & 2 employees']
+fig = plot_map()
 pio.write_html(fig, file='././maps/300sqm2emp.html', include_plotlyjs=False, full_html=False, div_id='plotly_map' )
 
 gdf['profit'] = gdf['Profit 300m^2 & 4 employees']
 gdf['minimum coffee price'] = gdf['Mindestverkaufspreis 300m^2 & 4 employees']
-plot_map()
+fig = plot_map()
 pio.write_html(fig, file='././maps/300sqm4emp.html', include_plotlyjs=False, full_html=False, div_id='plotly_map' )

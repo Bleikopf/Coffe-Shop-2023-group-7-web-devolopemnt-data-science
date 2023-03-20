@@ -20,6 +20,12 @@ This project displays data about coffee-prices in Düsseldorf on a small website
 * make sure the buttons are opening the generated maps onClick
 * frontend/script.JS has GITROOT constant for use on GitPages. Leave empty otherwise.
 * open index.HTML
+
+Alexander´s Introduction to execute the code:
+*1: Coffeeprice forecast: You have to download "Kaffeepreise.csv" and start "Kaffeepreis.py" than you recieve "Coffeeprice_forecast.csv"
+*2: Building prices: You have to start "BuildingPrices_Data.py" (You need google chrome for that) than you recieve "Mietpreise.csv"
+*3: Merging: Download "coffeeshop_market_insights.geojson" Start "Merge GeoData+rent.py" you recieve "merged_data.geojson"
+*4: Calculation: start "Break Even+Profit calc.py" and you recieve updated_data.geojson
 ```
 code blocks for commands
 ```
